@@ -11,7 +11,7 @@ services:
       POSTGRES_PASSWORD: root
       PGDATA: /data/postgres
     volumes:
-      - ./postgres-product:/data/postgres
+      - ./data/postgres-product:/data/postgres
     expose:
       - "5433"
     ports:
@@ -32,7 +32,7 @@ services:
       PGDATA: /data/postgres
       #De esta forma los datos de /data/postgres serán guardados en mi máquina en una carpeta llamada postgres-order
     volumes:
-      - ./postgres-login:/data/postgres
+      - ./data/postgres-login:/data/postgres
     expose:
       - "5432"
     ports:
